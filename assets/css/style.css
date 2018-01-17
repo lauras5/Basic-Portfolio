@@ -185,10 +185,14 @@ aside {
 footer {
     width: 100%;
     clear: both;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
     padding: 20px;
     background-color: #666666;
     border-top: 5px solid #4aaaa5;
     text-align: center;
     z-index: 3;
     color: white;
+
 }
