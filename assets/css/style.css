@@ -9,19 +9,19 @@ body {
 
 header {
     width: 100%;
-    height: 100px;
+    height: 96px;
     background-color: white;
     position: fixed;
     top: 0px;
     left: 0px;
+    z-index: 2;
 }
 
 h1 {
-    padding: 20px;
+    padding: 30px;
     width: 235px;
     margin-left: 195px;
-    margin-top: 5px;
-    height: 55px;
+    margin-top: 0px;
     text-align: center;
     display: inline-block;
     background-color: #4aaaa5;
@@ -31,9 +31,8 @@ h1 {
 
 #top-menu {
     display: inline-block;
-    margin-left: 450px;
+    margin-left: 428px;
 }
-
 
 .container {
     width: 960px;
@@ -51,23 +50,31 @@ form {
 
 #name, #email, #message {
     width: 100%;
-    height: 20px;
+    height: 30px;
     display: block;
     margin: 0 auto;
+    margin-top: 10px;
+    word-wrap: break-word;
 }
 
 #message {
     height: 70px;
+    
 }
 
-#submit {
-    margin: 0 auto;
+#submit-btn {
+
     display: block;
     text-align: center;
+    width: 120px;
+    color: white;
+    background-color: #4aaaa5;
+    padding: 10px;
 }
 
 h2 {
     margin-left: 30px;
+    margin-top: 40px;
     text-align: left;
     color: #4aaaa5;
     font-family: 'Georgia', Times, Times New Roman, serif;
@@ -86,31 +93,30 @@ p {
 
 a {
     text-decoration: none;
+    color: #777777;
 }
 
 a:hover {
-
+    color: rgb(250, 203, 198);
 }
 
 #social {
     margin: 0 auto;
 }
-
-.social-gh {
+.social-so, .social-li, .social-gh  {
     width: 48px;
     height: 48px;
+    margin: 20px 10px 30px 10px;
+}
+.social-gh {
     background-position: -366px -158px;
 }
 
 .social-li {
-    width: 48px;
-    height: 48px;
     background-position: -210px -54px;
 }
 
-.social-so {
-    width: 48px;
-    height: 48px;
+.social-so, .social-li, .social-gh {
     background-position: -158px -366px;
 }
 
@@ -120,12 +126,9 @@ span {
 
 section {
     float: left;
-    width: 706px;
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-bottom: 30px;
+    width: 650px;
+    margin: 20px 40px 100px 0;
     background-color: white;
-    margin-bottom: 100px;
 }
 
 hr {
@@ -136,30 +139,56 @@ hr {
     width: 80%;
 }
 
-img {
+#profile-pic {
     width: 150px;
     height: 150px;
     float: left;
     padding: 15px;
+    margin-left: 10px;
+    margin-bottom: 20px;
 }
 
+figure, .foliopics {
+    display: inline-block;
+    background-color: white;
+    clear: both;
+    height: 175px;
+    width: 262px;
+
+}
+
+figure {
+    margin-right: 10px;
+}
+
+figcaption {
+    background-color: #4aaaa5;
+    height: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 50px;
+    left: 0px;
+    padding: 10px;
+    color: white;
+    vertical-align:middle;
+    z-index: 1;
+    
+}
 aside {
     float: left;
-    width: 234px;
+    width: 270px;
     margin-top: 20px;
     text-align: center;
     background-color: white;
 }
 
 footer {
-    margin-top: 20px;
     width: 100%;
     clear: both;
     padding: 20px;
     background-color: #666666;
     border-top: 5px solid #4aaaa5;
     text-align: center;
-    position: fixed;
-    left: 0px;
-    bottom: 0px;
+    z-index: 3;
+    color: white;
 }
