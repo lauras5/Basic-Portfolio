@@ -62,11 +62,9 @@ form {
 
 #message {
     height: 70px;
-    
 }
 
 #submit-btn {
-
     display: block;
     text-align: center;
     width: 120px;
@@ -111,6 +109,7 @@ a:hover {
     height: 48px;
     margin: 20px 10px 30px 10px;
 }
+
 .social-gh {
     background-position: -366px -158px;
 }
